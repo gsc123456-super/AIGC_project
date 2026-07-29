@@ -1,0 +1,35 @@
+project: AIGC-Guard
+
+model:
+  name: resnet50
+  pretrained: true
+  num_classes: 2
+
+data:
+  train_dir: data/cifake/train
+  test_dir: data/cifake/test
+  input_size: 224
+  val_ratio: 0.1
+  max_train_samples: 2000
+  max_val_samples: 500
+  max_test_samples: 1000
+
+train:
+  device: cpu
+  epochs: 1
+  batch_size: 16
+  lr: 0.0001
+  weight_decay: 0.0001
+  num_workers: 0
+  amp: false
+  seed: 42
+
+eval:
+  device: cpu
+  batch_size: 32
+  num_workers: 0
+
+output:
+  ckpt_dir: results/checkpoints/resnet50_cifake_smoke_cpu
+  log_dir: results/logs/resnet50_cifake_smoke_cpu
+  table_dir: results/tables

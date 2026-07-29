@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.cache/
+data/raw/
+results/checkpoints/
+results/logs/
+results/figures/
+*.pth
+*.pt
+

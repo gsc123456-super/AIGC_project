@@ -1,0 +1,7 @@
+model,checkpoint,data,epoch,acc,precision,recall,f1,auc,loss,seconds,time_per_image_ms,source
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,2,0.9856,0.9949,0.9762,0.9855,0.9994,0.044216,15.846,9.904,all
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,imagenet_ai_0419_biggan,2,0.9975,0.9951,1.0000,0.9976,0.9998
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,imagenet_ai_0508_adm,2,0.9738,0.9947,0.9514,0.9725,0.9992
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,3,0.9931,0.9888,0.9975,0.9932,0.9998,0.025380,16.819,10.512,all
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,imagenet_ai_0419_biggan,3,0.9925,0.9855,1.0000,0.9927,0.9997
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,imagenet_ai_0508_adm,3,0.9938,0.9923,0.9949,0.9936,0.9998

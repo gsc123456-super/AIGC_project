@@ -1,0 +1,2 @@
+model,checkpoint,data,epoch,acc,precision,recall,f1,auc,loss,seconds,time_per_image_ms
+resnet50,results\checkpoints\resnet50_cifake_quick_gpu\best_f1.pth,data/cifake/test,2,0.9540,0.9406,0.9692,0.9547,0.9923,0.115706,15.254,3.051

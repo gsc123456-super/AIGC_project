@@ -1,0 +1,30 @@
+project: AIGC-Guard
+
+model:
+  name: resnet50
+  pretrained: true
+  num_classes: 2
+
+data:
+  train_dir: data/cifake/train
+  test_dir: data/cifake/test
+  input_size: 224
+  val_ratio: 0.1
+
+train:
+  epochs: 3
+  batch_size: 32
+  lr: 0.0001
+  weight_decay: 0.0001
+  num_workers: 2
+  amp: true
+  seed: 42
+
+eval:
+  batch_size: 64
+  num_workers: 2
+
+output:
+  ckpt_dir: results/checkpoints/resnet50_cifake
+  log_dir: results/logs/resnet50_cifake
+  table_dir: results/tables

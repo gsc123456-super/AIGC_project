@@ -1,0 +1,9 @@
+model,checkpoint,data,epoch,degradation,acc,precision,recall,f1,auc,loss
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,2,clean,0.9856,0.9949,0.9762,0.9855,0.9994,0.044216
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,2,jpeg_q75,0.6863,0.9967,0.3738,0.5436,0.9833,1.211460
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,2,jpeg_q50,0.5925,1.0000,0.1850,0.3122,0.9802,1.631850
+convnext_tiny,results\checkpoints\convnext_tiny_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,2,blur_k3,0.9469,0.9123,0.9888,0.9490,0.9904,0.162268
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,3,clean,0.9931,0.9888,0.9975,0.9932,0.9998,0.025380
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,3,jpeg_q75,0.7412,0.9923,0.4863,0.6527,0.9717,1.244013
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,3,jpeg_q50,0.7156,0.9859,0.4375,0.6061,0.9755,1.425245
+rgb_fft_fusion,results\checkpoints\rgb_fft_fusion_genimage_quick_final\best_f1.pth,data/genimage_subset/meta/test.csv,3,blur_k3,0.8956,0.8273,1.0000,0.9055,0.9927,0.417657

@@ -1,0 +1,35 @@
+project: AIGC-Guard
+
+model:
+  name: convnext_tiny
+  pretrained: true
+  num_classes: 2
+
+data:
+  train_csv: data/genimage_subset/meta/train.csv
+  val_csv: data/genimage_subset/meta/val.csv
+  test_csv: data/genimage_subset/meta/test.csv
+  input_size: 224
+  max_train_samples: 12000
+  max_val_samples: 2000
+  max_test_samples: 3000
+
+train:
+  device: cuda
+  epochs: 12
+  batch_size: 16
+  lr: 0.00005
+  weight_decay: 0.0001
+  num_workers: 4
+  amp: true
+  seed: 42
+
+eval:
+  device: cuda
+  batch_size: 64
+  num_workers: 4
+
+output:
+  ckpt_dir: results/checkpoints/convnext_tiny_genimage
+  log_dir: results/logs/convnext_tiny_genimage
+  table_dir: results/tables

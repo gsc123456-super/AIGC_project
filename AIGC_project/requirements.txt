@@ -1,0 +1,7 @@
+torch
+torchvision
+numpy>=2,<3
+pillow
+tqdm
+pyyaml
+gradio
